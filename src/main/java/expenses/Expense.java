@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.example.user.User;
+import org.example.user.user.User;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
