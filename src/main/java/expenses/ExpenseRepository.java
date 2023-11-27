@@ -1,6 +1,6 @@
 package expenses;
 
-import org.example.user.User;
+import org.example.user.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

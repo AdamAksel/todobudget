@@ -1,4 +1,4 @@
-package org.example.user;
+package user;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;

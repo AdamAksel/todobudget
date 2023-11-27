@@ -1,6 +1,6 @@
 package expenses;
 
-import org.example.user.User;
+import user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
