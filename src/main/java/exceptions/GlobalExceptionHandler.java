@@ -36,8 +36,12 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ApiResponse> handleUserNotAuthorizedException(UserNotAuthorizedException e) {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(ApiResponse.builder().message(e.getMessage()).build());
     }
+    @ExceptionHandler(UserNotFoundException.class)
+    public ResponseEntity<ApiResponse> handleUserNotFoundException(UserNotAuthorizedException e) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ApiResponse.builder().message(e.getMessage()).build());
 
-    @ExceptionHandler(MethodArgumentNotValidException.class)
+
+        @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ApiResponse> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
         String errorMessage = e.getBindingResult().getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).findFirst().orElse("Validation error");
         ApiResponse apiResponse = ApiResponse.builder().message(errorMessage).build();
