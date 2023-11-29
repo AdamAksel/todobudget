@@ -2,12 +2,12 @@ package budget;
 
 import lombok.RequiredArgsConstructor;
 
-import org.example.exception.ResourceNotFoundException;
-import org.example.exception.UserNotAuthorizedException;
-import org.example.todo.Todo;
-import org.example.todo.TodoResponse;
-import org.example.user.User;
-import org.example.utils.AuthenticationValidator;
+import exception.ResourceNotFoundException;
+import exception.UserNotAuthorizedException;
+import todo.Todo;
+import todo.TodoResponse;
+import user.User;
+import utils.AuthenticationValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
