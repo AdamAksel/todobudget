@@ -2,8 +2,8 @@ package budget;
 
 import lombok.RequiredArgsConstructor;
 
-import exception.ResourceNotFoundException;
-import exception.UserNotAuthorizedException;
+import exceptions.ResourceNotFoundException;
+import exceptions.UserNotAuthorizedException;
 import todo.Todo;
 import todo.TodoResponse;
 import user.User;
