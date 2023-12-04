@@ -1,25 +1,13 @@
 package todo;
 
-import jakarta.validation.ConstraintViolationException;
-import exception.ResourceNotFoundException;
-import exception.UserNotAuthorizedException;
-import exception.UserNotFoundException;
+import exceptions.ResourceNotFoundException;
+import exceptions.UserNotAuthorizedException;
 import user.User;
 import utils.AuthenticationValidator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.text.DateFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
 
 @Service
 public class TodoService {

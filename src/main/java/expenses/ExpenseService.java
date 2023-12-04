@@ -1,9 +1,14 @@
 package expenses;
 
+import budget.Budget;
+import budget.BudgetRepository;
+import exceptions.ResourceNotFoundException;
+import exceptions.UserNotAuthorizedException;
 import user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import utils.AuthenticationValidator;
 
 import java.util.List;
 import java.util.Optional;
@@ -39,7 +44,6 @@ public class ExpenseService {
                 .message("Successfully created expense! ")
                 .expense(expense)
                 .build();
-
     }
 
     public ExpenseResponse getAllExpensesByAuthenticatedUser() throws ResourceNotFoundException {

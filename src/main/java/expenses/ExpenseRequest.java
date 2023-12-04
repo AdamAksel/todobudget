@@ -1,5 +1,6 @@
 package expenses;
 
+import budget.Budget;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;

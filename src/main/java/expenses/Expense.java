@@ -1,13 +1,13 @@
 package expenses;
 
+import budget.Budget;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.example.user.user.User;
-
+import user.User;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 
